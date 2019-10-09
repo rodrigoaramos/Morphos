@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{1A24E7B0-B059-4D2F-A189-7F43CFF45251}</ProjectGuid>
+    <TargetFrameworkVersion>
+    </TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>Morphos</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ExecutablePath>C:\Program Files\lib\opencv\debug\x86\vc15\bin;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>C:\Program Files\lib\opencv\debug\include;C:\Program Files\lib\tesseract\include;$(IncludePath)</IncludePath>
+    <ReferencePath>C:\Program Files\lib\opencv\debug\x86\vc15\bin;$(VC_ReferencesPath_x86)</ReferencePath>
+    <LibraryPath>C:\Program Files\lib\opencv\debug\x86\vc15\lib;C:\Program Files\lib\tesseract\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ExecutablePath>\Dev\lib\opencv\debug\x86\vc15\bin;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>\Dev\lib\opencv\debug\include;\Dev\lib\tesseract\include;$(IncludePath)</IncludePath>
+    <ReferencePath>\Dev\lib\opencv\debug\x86\vc15\bin;$(VC_ReferencesPath_x86)</ReferencePath>
+    <LibraryPath>\Dev\lib\opencv\debug\x86\vc15\lib;\Dev\lib\tesseract\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary />
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_calib3d400.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_calib3d400d.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_core400.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_core400d.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_dnn400.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_dnn400d.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_features2d400.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_features2d400d.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_flann400.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_flann400d.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_gapi400.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_gapi400d.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_highgui400.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_highgui400d.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_imgcodecs400.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_imgcodecs400d.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_imgproc400.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_imgproc400d.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_ml400.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_ml400d.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_objdetect400.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_objdetect400d.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_photo400.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_photo400d.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_shape400.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_shape400d.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_stitching400.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_stitching400d.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_superres400.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_superres400d.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_video400.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_video400d.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_videoio400.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_videoio400d.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_videostab400.lib;C:\Program Files\lib\opencv\debug\x86\vc15\lib\opencv_videostab400d.lib;C:\Program Files\lib\tesseract\lib\tesseract305.lib;C:\Program Files\lib\tesseract\lib\leptonica-1.76.0.lib;C:\Program Files\lib\tesseract\lib\zlib.lib;C:\Program Files\lib\tesseract\lib\gif.lib;C:\Program Files\lib\tesseract\lib\icudt.lib;C:\Program Files\lib\tesseract\lib\icuin.lib;C:\Program Files\lib\tesseract\lib\icuio.lib;C:\Program Files\lib\tesseract\lib\icutu.lib;C:\Program Files\lib\tesseract\lib\icuuc.lib;C:\Program Files\lib\tesseract\lib\jpeg.lib;C:\Program Files\lib\tesseract\lib\libpng16.lib;C:\Program Files\lib\tesseract\lib\lzma.lib;C:\Program Files\lib\tesseract\lib\tiff.lib;C:\Program Files\lib\tesseract\lib\tiffxx.lib;C:\Program Files\lib\tesseract\lib\turbojpeg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>\Dev\lib\opencv\debug\x86\vc15\lib\opencv_calib3d400.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_calib3d400d.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_core400.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_core400d.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_dnn400.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_dnn400d.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_features2d400.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_features2d400d.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_flann400.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_flann400d.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_gapi400.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_gapi400d.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_highgui400.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_highgui400d.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_imgcodecs400.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_imgcodecs400d.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_imgproc400.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_imgproc400d.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_ml400.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_ml400d.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_objdetect400.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_objdetect400d.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_photo400.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_photo400d.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_shape400.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_shape400d.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_stitching400.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_stitching400d.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_superres400.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_superres400d.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_video400.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_video400d.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_videoio400.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_videoio400d.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_videostab400.lib;\Dev\lib\opencv\debug\x86\vc15\lib\opencv_videostab400d.lib;\Dev\lib\tesseract\lib\tesseract305.lib;\Dev\lib\tesseract\lib\leptonica-1.76.0.lib;\Dev\lib\tesseract\lib\zlib.lib;\Dev\lib\tesseract\lib\gif.lib;\Dev\lib\tesseract\lib\icudt.lib;\Dev\lib\tesseract\lib\icuin.lib;\Dev\lib\tesseract\lib\icuio.lib;\Dev\lib\tesseract\lib\icutu.lib;\Dev\lib\tesseract\lib\icuuc.lib;\Dev\lib\tesseract\lib\jpeg.lib;\Dev\lib\tesseract\lib\libpng16.lib;\Dev\lib\tesseract\lib\lzma.lib;\Dev\lib\tesseract\lib\tiff.lib;\Dev\lib\tesseract\lib\tiffxx.lib;\Dev\lib\tesseract\lib\turbojpeg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Analiser.cpp" />
+    <ClCompile Include="Container.cpp" />
+    <ClCompile Include="HistG.cpp" />
+    <ClCompile Include="Layer.cpp" />
+    <ClCompile Include="LayerGrid.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Matrix.cpp" />
+    <ClCompile Include="NeuralNetwork.cpp" />
+    <ClCompile Include="Neuron.cpp" />
+    <ClCompile Include="NodeGrid.cpp" />
+    <ClCompile Include="Overlapping.cpp" />
+    <ClCompile Include="Pipeline.cpp" />
+    <ClCompile Include="Point.cpp" />
+    <ClCompile Include="Rect.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Analiser.h" />
+    <ClInclude Include="Container.h" />
+    <ClInclude Include="HistG.h" />
+    <ClInclude Include="Layer.h" />
+    <ClInclude Include="LayerGrid.h" />
+    <ClInclude Include="Matrix.h" />
+    <ClInclude Include="NeuralNetwork.h" />
+    <ClInclude Include="Neuron.h" />
+    <ClInclude Include="NodeGrid.h" />
+    <ClInclude Include="Overlapping.h" />
+    <ClInclude Include="Pipeline.h" />
+    <ClInclude Include="Point.h" />
+    <ClInclude Include="Rect.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
